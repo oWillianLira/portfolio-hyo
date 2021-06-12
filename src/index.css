@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Dubai;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Dubai';
+  src: local('Dubai'), url(./Assets/Fonts/Dubai-Regular.ttf) format('truetype');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Dubai';
+  src: local('Dubai'), url(./Assets/Fonts/Dubai-Light.ttf) format('truetype');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Dubai';
+  src: local('Dubai'), url(./Assets/Fonts/Dubai-Medium.ttf) format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Dubai';
+  src: local('Dubai'), url(./Assets/Fonts/Dubai-Bold.ttf) format('truetype');
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
