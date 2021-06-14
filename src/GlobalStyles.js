@@ -1,10 +1,25 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Dubai;
   font-size: 16px;
+  letter-spacing: 1px;
   font-weight: normal;
+  outline: none;
+
+  @media ( min-width: 1600px ){
+    font-size: 20px;
+  }
+}
+
+.container {
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+  }
 }
 
 /* width */
@@ -51,3 +66,26 @@ body {
 a {
   text-decoration: none;
 }
+
+img {
+  max-width: 100%;
+}
+
+h1 { font-size: 3.5em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2.5em; }
+h4 { font-size: 2em; }
+
+span { font-size: .9em; }
+
+`;
+
+export const colors = {
+  blue1: '#5A86A9',
+  blue2: '#3A4D5C',
+  blue3: '#212032',
+  brown1: '#D1B9A1',
+  brown2: '#C45030',
+};
+
+export default GlobalStyle;
