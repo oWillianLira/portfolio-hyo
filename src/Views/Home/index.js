@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { colors } from '../../GlobalStyles';
 
+import Menu from '../Components/Menu';
 import girl from '../../Assets/Images/welcome_girl.png';
 
 export default function Home() {
@@ -54,7 +55,8 @@ export default function Home() {
 
   const Contact = styled(Link)`
     color: #fff;
-    margin: 0 auto 75px;
+    /* margin: 0 auto 75px; */
+    margin-bottom: 75px;
     font-size: 1.8em;
     letter-spacing: 0;
     position: relative;
@@ -109,7 +111,9 @@ export default function Home() {
 
   const Girl = styled.picture`
     img {
-      /* max-width: 80%; */
+      @media (min-width: 1600px) {
+        width: 675px;
+      }
     }
   `;
 
@@ -117,8 +121,12 @@ export default function Home() {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     color: ${colors.brown1};
-    font-size: 1.4em;
+    font-size: 1.5em;
     cursor: default;
+    padding-bottom: 25px;
+    @media (min-width: 1600px) {
+      padding-bottom: 75px;
+    }
   `;
 
   return (
@@ -266,6 +274,7 @@ export default function Home() {
           </div>
           <div className="col-xxl-3 col-lg-4 text-end">
             <ToMenu>Fell free to look around ❯</ToMenu>
+            <Menu c1="#fff" c2={colors.brown1}></Menu>
           </div>
         </div>
       </div>

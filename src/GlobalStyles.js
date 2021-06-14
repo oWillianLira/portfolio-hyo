@@ -10,6 +10,16 @@ body {
   letter-spacing: 1px;
   font-weight: normal;
   outline: none;
+
+  @media ( min-width: 1600px ){
+    font-size: 20px;
+  }
+}
+
+.container {
+  @media (min-width: 1600px) {
+    max-width: 1600px;
+  }
 }
 
 /* width */
