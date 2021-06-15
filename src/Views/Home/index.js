@@ -7,23 +7,6 @@ import Menu from '../Components/Menu';
 import girl from '../../Assets/Images/welcome_girl.png';
 
 export default function Home() {
-  const View = styled.section`
-    width: 100%;
-    min-height: 100vh;
-    padding: 25px 0 0;
-    background: transparent radial-gradient(40% 40% at 25% 50%, #44769e 0%, #3a4d5c 100%) 0% 0% no-repeat padding-box;
-    display: flex;
-    flex-direction: column;
-    .container {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      .row {
-        flex: 1;
-      }
-    }
-  `;
-
   const Lines = styled.div`
     position: absolute;
     right: 0;
@@ -50,12 +33,21 @@ export default function Home() {
     }
     h1 {
       font-weight: 200;
+      @media screen and (max-width: 767px) {
+        width: 375px;
+        max-width: 100%;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 2.5em;
+        strong {
+          display: block;
+        }
+      }
     }
   `;
 
   const Contact = styled(Link)`
     color: #fff;
-    /* margin: 0 auto 75px; */
     margin-bottom: 75px;
     font-size: 1.8em;
     letter-spacing: 0;
@@ -107,6 +99,18 @@ export default function Home() {
       margin-top: 10px;
       transition: 1000ms ease-in-out;
     }
+    @media screen and (max-width: 991px) {
+      height: 150px;
+      width: 150px;
+    }
+    @media screen and (max-width: 767px) {
+      height: 130px;
+      width: 130px;
+      margin: 0 auto 50px;
+    }
+    @media screen and (max-width: 575px) {
+      display: none;
+    }
   `;
 
   const Girl = styled.picture`
@@ -114,23 +118,30 @@ export default function Home() {
       @media (min-width: 1600px) {
         width: 675px;
       }
+      @media screen and (max-width: 575px) {
+        width: 425px;
+        max-width: 95%;
+      }
     }
   `;
 
   const ToMenu = styled.span`
+    position: absolute;
+    right: 5px;
+    top: 48%;
+    transform: translateY(-50%);
     writing-mode: vertical-rl;
     text-orientation: mixed;
     color: ${colors.brown1};
     font-size: 1.5em;
     cursor: default;
-    padding-bottom: 25px;
-    @media (min-width: 1600px) {
-      padding-bottom: 75px;
+    @media screen and (max-width: 575px) {
+      display: none;
     }
   `;
 
   return (
-    <View>
+    <section className="view">
       <Lines>
         <svg xmlns="http://www.w3.org/2000/svg" width="200.707" height="440.707" viewBox="0 0 200.707 440.707">
           <g id="lines" transform="translate(-1719.646 160.354)">
@@ -258,26 +269,26 @@ export default function Home() {
         <Welcome>
           <h3>Hello!</h3>
           <h1>
-            Welcome to <strong>Hyolanda's Portfolio</strong>...
+            Welcome to <strong>Hyolanda's Portfolio</strong>
           </h1>
         </Welcome>
         <div className="row align-items-end position-relative">
-          <div className="col-xxl-3 col-lg-4">
+          <div className="col-xxl-3 col-xl-4 col-md-4 col-sm-5">
             <Contact to="/contact">
               <span>Get in touch</span>
             </Contact>
           </div>
-          <div className="col-xxl-6 col-lg-4 text-center">
+          <div className="col-xxl-6 col-xl-4 col-md-8 col-sm-7 text-center">
             <Girl>
               <img src={girl} alt="Welcome girl" />
             </Girl>
           </div>
-          <div className="col-xxl-3 col-lg-4 text-end">
-            <ToMenu>Fell free to look around ❯</ToMenu>
+          <div className="col-xxl-3 col-xl-4 text-end">
             <Menu c1="#fff" c2={colors.brown1}></Menu>
           </div>
         </div>
       </div>
-    </View>
+      <ToMenu>Fell free to look around ❯</ToMenu>
+    </section>
   );
 }

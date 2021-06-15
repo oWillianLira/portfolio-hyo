@@ -1,15 +1,13 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { colors } from '../../../GlobalStyles';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export default function Menu(props) {
   const Nav = styled.nav`
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     ul {
       list-style: none;
+      padding: 0;
+      margin-bottom: 15px;
       a {
         color: ${props.c1};
         font-size: 1.8em;
@@ -32,6 +30,13 @@ export default function Menu(props) {
           right: -5px;
         }
       }
+      @media screen and (max-width: 1199px) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    @media screen and (max-width: 575px) {
+      display: none;
     }
   `;
 

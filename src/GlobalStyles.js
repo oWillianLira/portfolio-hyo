@@ -11,14 +11,37 @@ body {
   font-weight: normal;
   outline: none;
 
-  @media ( min-width: 1600px ){
+  @media screen and ( min-width: 1600px ){
     font-size: 20px;
+  }
+  @media screen and ( max-width: 991px ) {
+    font-size: 13px;
+  }
+  @media screen and ( max-width: 767px ) {
+    font-size: 11px;
   }
 }
 
 .container {
   @media (min-width: 1600px) {
-    max-width: 1600px;
+    max-width: 1500px;
+  }
+}
+
+.view {
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px 0 0;
+  background: transparent radial-gradient(40% 40% at 25% 50%, #44769e 0%, #3a4d5c 100%) 0% 0% no-repeat padding-box;
+  display: flex;
+  flex-direction: column;
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .row {
+      flex: 1;
+    }
   }
 }
 
