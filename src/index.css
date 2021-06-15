@@ -3,7 +3,28 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Dubai;
+  font-size: 16px;
   font-weight: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333;
 }
 
 @font-face {
