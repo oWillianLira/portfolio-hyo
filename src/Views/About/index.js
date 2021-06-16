@@ -10,8 +10,10 @@ export default function About() {
   `;
 
   return (
-    <Wrapper>
-      <Link to="/">Home</Link>
-    </Wrapper>
+    <main className="page">
+      <Wrapper>
+        <Link to="/">Home</Link>
+      </Wrapper>
+    </main>
   );
 }
