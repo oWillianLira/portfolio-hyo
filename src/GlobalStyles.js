@@ -1,12 +1,60 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
+main.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.fade-appear, .fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active, .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: 500ms ease-in-out;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: 500ms ease-in-out;
+}
+
+/* @font-face {
+  font-family: 'Dubai';
+  font-weight: normal;
+  src: local('Dubai'), url('./Assets/Fonts/Dubai-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dubai';
+  font-weight: 200;
+  src: local('Dubai'), url('./Assets/Fonts/Dubai-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dubai';
+  font-weight: 400;
+  src: local('Dubai'), url('./Assets/Fonts/Dubai-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Dubai';
+  font-weight: 600;
+  src: local('Dubai'), url('./Assets/Fonts/Dubai-Bold.ttf') format('truetype');
+} */
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Dubai;
-  font-size: 16px;
+  font-family: Segoe UI;
+  font-size: 15px;
   letter-spacing: 1px;
   font-weight: normal;
   outline: none;
@@ -28,23 +76,6 @@ body {
   }
 }
 
-.view {
-  width: 100%;
-  min-height: 100vh;
-  padding: 25px 0 0;
-  background: transparent radial-gradient(40% 40% at 25% 50%, #44769e 0%, #3a4d5c 100%) 0% 0% no-repeat padding-box;
-  display: flex;
-  flex-direction: column;
-  .container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    .row {
-      flex: 1;
-    }
-  }
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -63,27 +94,6 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #333;
-}
-
-@font-face {
-  font-family: 'Dubai';
-  src: local('Dubai'), url(./Assets/Fonts/Dubai-Regular.ttf) format('truetype');
-  font-weight: normal;
-}
-@font-face {
-  font-family: 'Dubai';
-  src: local('Dubai'), url(./Assets/Fonts/Dubai-Light.ttf) format('truetype');
-  font-weight: 200;
-}
-@font-face {
-  font-family: 'Dubai';
-  src: local('Dubai'), url(./Assets/Fonts/Dubai-Medium.ttf) format('truetype');
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Dubai';
-  src: local('Dubai'), url(./Assets/Fonts/Dubai-Bold.ttf) format('truetype');
-  font-weight: 600;
 }
 
 a {
