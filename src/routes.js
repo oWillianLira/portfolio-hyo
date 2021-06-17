@@ -14,8 +14,8 @@ export default function Routes() {
           <CSSTransition key={location.key} classNames="fade" timeout={500}>
             <Switch location={location}>
               <Route path="/" exact component={Home} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/about/" component={About} />
+              <Route path="/contact/" component={Contact} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
