@@ -10,18 +10,19 @@ export default function Menu(props) {
       margin-bottom: 15px;
       a {
         color: ${props.c1};
-        font-size: 1.8em;
+        font-size: 1.6em;
         letter-spacing: 2px;
         display: inline-block;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         transition: 300ms;
         position: relative;
         &::after {
           content: '';
           position: absolute;
           left: -5px;
-          bottom: 0;
+          bottom: -2px;
           right: 98%;
+          min-width: 15px;
           height: 4px;
           background-color: ${props.c2};
           transition: 300ms ease-out;
@@ -40,17 +41,30 @@ export default function Menu(props) {
     }
   `;
 
+  window.homepagecheck = function () {
+    var check = false;
+    if (document.location.pathname === '/') {
+      check = true;
+    }
+    return check;
+  };
+
   return (
     <Nav>
       <ul>
+        {!window.homepagecheck() && (
+          <li>
+            <Link to="/">Welcome</Link>
+          </li>
+        )}
         <li>
-          <Link to="/about">About me</Link>
+          <Link to="/about/">About me</Link>
         </li>
         <li>
-          <Link to="/static">Static arts</Link>
+          <Link to="/static/">Static arts</Link>
         </li>
         <li>
-          <Link to="/animations">Animations</Link>
+          <Link to="/animations/">Animations</Link>
         </li>
       </ul>
     </Nav>

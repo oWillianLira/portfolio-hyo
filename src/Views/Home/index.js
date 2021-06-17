@@ -292,7 +292,7 @@ export default function Home() {
           </Welcome>
           <div className="row align-items-end position-relative">
             <div className="col-xxl-3 col-xl-4 col-md-4 col-sm-5">
-              <Contact to="/contact">
+              <Contact to="/contact/">
                 <span>Get in touch</span>
               </Contact>
             </div>
