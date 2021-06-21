@@ -22,6 +22,11 @@ export default function Home() {
         flex: 1;
       }
     }
+    @media screen and (min-width: 576px) {
+      .contact {
+        display: none;
+      }
+    }
   `;
 
   const Lines = styled.div`
@@ -137,7 +142,7 @@ export default function Home() {
       }
       @media screen and (max-width: 575px) {
         width: 425px;
-        max-width: 95%;
+        max-width: 85%;
       }
     }
   `;
