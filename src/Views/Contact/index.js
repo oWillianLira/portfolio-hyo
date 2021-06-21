@@ -156,7 +156,7 @@ export default function Contact() {
     justify-content: center;
     align-items: flex-end;
     img {
-      width: 650px;
+      width: 700px;
       @media screen and (max-width: 1550px) {
         width: 500px;
       }

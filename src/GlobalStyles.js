@@ -28,7 +28,7 @@ main.page {
   transition: 500ms ease-in-out;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'Dubai';
   font-weight: normal;
   src: local('Dubai'), url('./Assets/Fonts/Dubai-Regular.ttf') format('truetype');
@@ -47,14 +47,14 @@ main.page {
   font-family: 'Dubai';
   font-weight: 600;
   src: local('Dubai'), url('./Assets/Fonts/Dubai-Bold.ttf') format('truetype');
-} */
+}
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Segoe UI;
-  font-size: 14px;
+  font-family: 'Dubai', Segoe UI;
+  font-size: 15px;
   letter-spacing: 1px;
   font-weight: normal;
   outline: none;
