@@ -27,17 +27,22 @@ export default function Menu(props) {
           background-color: ${props.c2};
           transition: 300ms ease-out;
         }
-        &:hover::after {
+        &:hover::after,
+        &:active::after {
           right: -5px;
         }
       }
       @media screen and (max-width: 1199px) {
         display: flex;
         justify-content: space-between;
+        margin-top: 15px;
       }
-    }
-    @media screen and (max-width: 575px) {
-      display: none;
+      @media screen and (max-width: 500px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+      }
     }
   `;
 
@@ -54,7 +59,12 @@ export default function Menu(props) {
       <ul>
         {!window.homepagecheck() && (
           <li>
-            <Link to="/">Welcome</Link>
+            <Link to="/">Homepage</Link>
+          </li>
+        )}
+        {!window.location.href.includes('contact') && (
+          <li>
+            <Link to="/contact/">Contact</Link>
           </li>
         )}
         <li>

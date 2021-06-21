@@ -152,7 +152,7 @@ export default function Home() {
     color: ${colors.brown1};
     font-size: 1.5em;
     cursor: default;
-    @media screen and (max-width: 575px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   `;

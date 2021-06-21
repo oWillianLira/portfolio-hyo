@@ -54,13 +54,13 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: Segoe UI;
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
   font-weight: normal;
   outline: none;
 
   @media screen and ( min-width: 1600px ){
-    font-size: 20px;
+    font-size: 18px;
   }
   @media screen and ( max-width: 991px ) {
     font-size: 13px;
@@ -88,7 +88,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: #3A4D5C;
 }
 
 /* Handle on hover */
