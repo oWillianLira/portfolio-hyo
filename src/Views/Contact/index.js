@@ -21,6 +21,14 @@ export default function Contact() {
       flex-direction: column;
       flex: 1;
     }
+    @media screen and (max-width: 767px) {
+      .text-center:last-of-type {
+        margin-bottom: 25px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      padding-top: 25px;
+    }
   `;
 
   const Resume = styled.a`
@@ -78,14 +86,13 @@ export default function Contact() {
       transition: 1000ms ease-in-out;
     }
     @media screen and (max-width: 1199px) {
-      /* margin-bottom: 50px; */
+      position: absolute;
+      top: 70vh;
+    }
+    @media screen and (max-width: 991px) {
+      top: 40vh;
     }
     @media screen and (max-width: 767px) {
-      height: 130px;
-      width: 130px;
-      margin: 0 auto 50px;
-    }
-    @media screen and (max-width: 575px) {
       display: none;
     }
   `;
@@ -96,14 +103,19 @@ export default function Contact() {
     svg {
       max-width: 30%;
     }
-    @media screen and (max-width: 1199px) {
-      text-align: left;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 25px;
+    }
+    @media screen and (max-width: 575px) {
+      margin-bottom: 0;
     }
   `;
 
   const ContactAddress = styled.address`
     position: relative;
     min-height: 100px;
+    max-width: 325px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,6 +123,9 @@ export default function Contact() {
     a img {
       width: 75px;
       height: auto;
+      @media screen and (max-width: 991px) {
+        width: 50px;
+      }
     }
     a span {
       color: #fff;
@@ -126,6 +141,12 @@ export default function Contact() {
     }
     &:hover span {
       top: 100%;
+      @media screen and (max-width: 767px) {
+        top: 90%;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      min-height: 85px;
     }
   `;
 
@@ -136,8 +157,14 @@ export default function Contact() {
     align-items: flex-end;
     img {
       width: 650px;
+      @media screen and (max-width: 1550px) {
+        width: 500px;
+      }
+      @media screen and (max-width: 1366px) {
+        width: 380px;
+      }
       @media screen and (max-width: 991px) {
-        width: 350px;
+        width: 330px;
       }
     }
   `;
