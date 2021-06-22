@@ -18,7 +18,7 @@ export default function Home() {
       flex: 1;
       display: flex;
       flex-direction: column;
-      .row {
+      .row.expanded {
         flex: 1;
       }
     }
@@ -43,7 +43,13 @@ export default function Home() {
     width: 100%;
     text-align: center;
     svg {
-      max-width: 30%;
+      max-width: 125px;
+    }
+    @media screen and (max-width: 767px) {
+      margin-bottom: 25px;
+    }
+    @media screen and (max-width: 575px) {
+      margin-bottom: 0;
     }
   `;
 
@@ -212,90 +218,96 @@ export default function Home() {
           </svg>
         </Lines>
         <div className="container">
-          <Circles>
-            <svg xmlns="http://www.w3.org/2000/svg" width="165" height="45" viewBox="0 0 165 45">
-              <g id="circles" transform="translate(-878 -75)">
-                <g
-                  id="Elipse_6"
-                  data-name="Elipse 6"
-                  transform="translate(878 75)"
-                  fill="none"
-                  stroke="#d1b9a1"
-                  stroke-width="2"
-                >
-                  <circle cx="15" cy="15" r="15" stroke="none" />
-                  <circle cx="15" cy="15" r="14" fill="none" />
-                </g>
-                <g
-                  id="Elipse_7"
-                  data-name="Elipse 7"
-                  transform="translate(923 75)"
-                  fill="none"
-                  stroke="#d1b9a1"
-                  stroke-width="2"
-                >
-                  <circle cx="15" cy="15" r="15" stroke="none" />
-                  <circle cx="15" cy="15" r="14" fill="none" />
-                </g>
-                <g
-                  id="Elipse_8"
-                  data-name="Elipse 8"
-                  transform="translate(968 75)"
-                  fill="none"
-                  stroke="#d1b9a1"
-                  stroke-width="2"
-                >
-                  <circle cx="15" cy="15" r="15" stroke="none" />
-                  <circle cx="15" cy="15" r="14" fill="none" />
-                </g>
-                <g
-                  id="Elipse_9"
-                  data-name="Elipse 9"
-                  transform="translate(1013 75)"
-                  fill="none"
-                  stroke="#d1b9a1"
-                  stroke-width="2"
-                >
-                  <circle cx="15" cy="15" r="15" stroke="none" />
-                  <circle cx="15" cy="15" r="14" fill="none" />
-                </g>
-                <circle
-                  id="Elipse_10"
-                  data-name="Elipse 10"
-                  cx="15"
-                  cy="15"
-                  r="15"
-                  transform="translate(900 90)"
-                  fill="#5a86a9"
-                />
-                <circle
-                  id="Elipse_11"
-                  data-name="Elipse 11"
-                  cx="15"
-                  cy="15"
-                  r="15"
-                  transform="translate(945 90)"
-                  fill="#5a86a9"
-                />
-                <circle
-                  id="Elipse_12"
-                  data-name="Elipse 12"
-                  cx="15"
-                  cy="15"
-                  r="15"
-                  transform="translate(990 90)"
-                  fill="#5a86a9"
-                />
-              </g>
-            </svg>
-          </Circles>
+          <div className="row">
+            <div className="col"></div>
+            <div className="col-xxl-6 col-xl-4 col-md-12">
+              <Circles>
+                <svg xmlns="http://www.w3.org/2000/svg" width="165" height="45" viewBox="0 0 165 45">
+                  <g id="circles" transform="translate(-878 -75)">
+                    <g
+                      id="Elipse_6"
+                      data-name="Elipse 6"
+                      transform="translate(878 75)"
+                      fill="none"
+                      stroke="#d1b9a1"
+                      stroke-width="2"
+                    >
+                      <circle cx="15" cy="15" r="15" stroke="none" />
+                      <circle cx="15" cy="15" r="14" fill="none" />
+                    </g>
+                    <g
+                      id="Elipse_7"
+                      data-name="Elipse 7"
+                      transform="translate(923 75)"
+                      fill="none"
+                      stroke="#d1b9a1"
+                      stroke-width="2"
+                    >
+                      <circle cx="15" cy="15" r="15" stroke="none" />
+                      <circle cx="15" cy="15" r="14" fill="none" />
+                    </g>
+                    <g
+                      id="Elipse_8"
+                      data-name="Elipse 8"
+                      transform="translate(968 75)"
+                      fill="none"
+                      stroke="#d1b9a1"
+                      stroke-width="2"
+                    >
+                      <circle cx="15" cy="15" r="15" stroke="none" />
+                      <circle cx="15" cy="15" r="14" fill="none" />
+                    </g>
+                    <g
+                      id="Elipse_9"
+                      data-name="Elipse 9"
+                      transform="translate(1013 75)"
+                      fill="none"
+                      stroke="#d1b9a1"
+                      stroke-width="2"
+                    >
+                      <circle cx="15" cy="15" r="15" stroke="none" />
+                      <circle cx="15" cy="15" r="14" fill="none" />
+                    </g>
+                    <circle
+                      id="Elipse_10"
+                      data-name="Elipse 10"
+                      cx="15"
+                      cy="15"
+                      r="15"
+                      transform="translate(900 90)"
+                      fill="#5a86a9"
+                    />
+                    <circle
+                      id="Elipse_11"
+                      data-name="Elipse 11"
+                      cx="15"
+                      cy="15"
+                      r="15"
+                      transform="translate(945 90)"
+                      fill="#5a86a9"
+                    />
+                    <circle
+                      id="Elipse_12"
+                      data-name="Elipse 12"
+                      cx="15"
+                      cy="15"
+                      r="15"
+                      transform="translate(990 90)"
+                      fill="#5a86a9"
+                    />
+                  </g>
+                </svg>
+              </Circles>
+            </div>
+            <div className="col"></div>
+          </div>
           <Welcome>
             <h3>Hello!</h3>
             <h1>
               Welcome to <strong>Hyolanda's Portfolio</strong>
             </h1>
           </Welcome>
-          <div className="row align-items-end position-relative">
+          <div className="row expanded align-items-end position-relative">
             <div className="col-xxl-3 col-xl-4 col-md-4 col-sm-5">
               <Contact to="/contact/">
                 <span>Get in touch</span>
