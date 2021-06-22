@@ -13,7 +13,7 @@ export default function Contact() {
     background: transparent radial-gradient(40% 40% at 25% 50%, #d69050 0%, #ac703a 100%) 0% 0% no-repeat padding-box;
     width: 100%;
     min-height: 100vh;
-    padding: 50px 0 5px;
+    padding: 25px 0 5px;
     display: flex;
     flex-direction: column;
     .container {
@@ -101,7 +101,7 @@ export default function Contact() {
     width: 100%;
     text-align: center;
     svg {
-      max-width: 30%;
+      max-width: 125px;
     }
     @media screen and (max-width: 767px) {
       margin-bottom: 25px;
