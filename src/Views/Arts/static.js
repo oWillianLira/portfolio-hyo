@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../GlobalStyles';
 import Menu from '../Components/Menu';
-import SliderArts from '../Components/Slider';
+import SliderArts from '../Components/SliderStatic';
 
 export default function Static() {
   const View = styled.section`
@@ -36,12 +36,33 @@ export default function Static() {
     }
   `;
 
+  const Intro = styled.div`
+    color: ${colors.blue2};
+    h2 {
+      font-size: 2em;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+    h1 {
+      line-height: 1;
+      font-family: serif;
+      font-size: 3.5em;
+      text-align: right;
+      margin-bottom: 0;
+    }
+  `;
+
   return (
     <main className="page">
       <View>
         <div className="container">
           <div className="row">
-            <div className="col-xxl-3 col-xl-4"></div>
+            <div className="col-xxl-3 col-xl-4">
+              <Intro>
+                {/* <h2>Welcome to</h2>
+                <h1>my gallery</h1> */}
+              </Intro>
+            </div>
             <div className="col-xxl-6 col-xl-4 col-md-12">
               <Circles>
                 <svg xmlns="http://www.w3.org/2000/svg" width="165" height="45" viewBox="0 0 165 45">
@@ -122,7 +143,7 @@ export default function Static() {
               </Circles>
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-12 text-end">
-              <Menu c1={colors.brown2} c2={colors.blue1}></Menu>
+              <Menu c1={colors.blue2} c2={colors.blue1}></Menu>
             </div>
           </div>
           <SliderArts></SliderArts>
