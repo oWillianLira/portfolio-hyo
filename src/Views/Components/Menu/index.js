@@ -80,12 +80,16 @@ export default function Menu(props) {
             <Link to="/about/">About me</Link>
           </li>
         )}
-        <li>
-          <Link to="/static/">Static arts</Link>
-        </li>
-        <li>
-          <Link to="/animations/">Animations</Link>
-        </li>
+        {!window.location.href.includes('static') && (
+          <li>
+            <Link to="/static/">Static arts</Link>
+          </li>
+        )}
+        {!window.location.href.includes('animations') && (
+          <li>
+            <Link to="/animations/">Animations</Link>
+          </li>
+        )}
       </ul>
     </Nav>
   );

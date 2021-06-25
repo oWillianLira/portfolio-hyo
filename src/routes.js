@@ -5,6 +5,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Home from './Views/Home';
 import About from './Views/About';
 import Contact from './Views/Contact';
+import Static from './Views/Arts/static';
+import Animations from './Views/Arts/animations';
 
 export default function Routes() {
   return (
@@ -16,6 +18,8 @@ export default function Routes() {
               <Route path="/" exact component={Home} />
               <Route path="/about/" component={About} />
               <Route path="/contact/" component={Contact} />
+              <Route path="/static/" component={Static} />
+              <Route path="/animations/" component={Animations} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
