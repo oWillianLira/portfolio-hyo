@@ -4,13 +4,13 @@ import styled from 'styled-components';
 
 import { colors } from '../../../GlobalStyles';
 
-import cartaz1 from '../../../Arts/static/cartaz1.jpg';
+// import cartaz1 from '../../../Arts/static/cartaz1.jpg';
 import mockup1 from '../../../Arts/static/cartaz1-mockup.png';
-import cartaz2 from '../../../Arts/static/cartaz2.jpg';
+// import cartaz2 from '../../../Arts/static/cartaz2.jpg';
 import mockup2 from '../../../Arts/static/cartaz2-mockup.png';
-import cartaz3 from '../../../Arts/static/cartaz3.jpg';
+// import cartaz3 from '../../../Arts/static/cartaz3.jpg';
 import mockup3 from '../../../Arts/static/cartaz3-mockup.png';
-import cartaz4 from '../../../Arts/static/cartaz4.jpg';
+// import cartaz4 from '../../../Arts/static/cartaz4.jpg';
 import mockup4 from '../../../Arts/static/cartaz4-mockup.png';
 
 // function importAll(r) {
@@ -89,22 +89,22 @@ export default function SliderArts() {
     <Mural>
       <Slider {...settings}>
         <MiniPreview>
-          <a href="#">
+          <a href="/">
             <img src={mockup3} alt="Hyolanda Fava" />
           </a>
         </MiniPreview>
         <MiniPreview>
-          <a href="#">
+          <a href="/">
             <img src={mockup4} alt="Norway" />
           </a>
         </MiniPreview>
         <MiniPreview>
-          <a href="#">
+          <a href="/">
             <img src={mockup1} alt="Oh ok, but!" />
           </a>
         </MiniPreview>
         <MiniPreview>
-          <a href="#">
+          <a href="/">
             <img src={mockup2} alt="Team Croatia" />
           </a>
         </MiniPreview>
