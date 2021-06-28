@@ -158,7 +158,6 @@ export default function About() {
         }
       }
     }
-
   `;
 
   return (
@@ -168,7 +167,7 @@ export default function About() {
           <div className="row">
             <div className="col-xxl-3 col-xl-4">
               <Resume
-                target="_blank" 
+                target="_blank"
                 title="To know much more about me"
                 href="https://drive.google.com/file/d/128XDkeQmIZ5WHqU5ayQ3mUybW4NZdOJz/view?usp=sharing"
               >
@@ -262,20 +261,32 @@ export default function About() {
             </div>
           </div>
           <div className="row expanded">
-              <div className="col-xxl-5 col-md-12">
-                <About>
-                  <li title="That's not my full name"><h1>Hyolanda Fava</h1></li>
-                  <li title="My birthday is on May 13th">Existing since May/1996</li>
-                  <li title="Help me to move away!">Living in Guarulhos/SP (Brazil)</li>
-                  <li title="I took some time to discover my professional passion">Working with Digital Design since Jan/2021</li>
-                  <li className="cv" title="Check my resume"><a href="https://drive.google.com/file/d/128XDkeQmIZ5WHqU5ayQ3mUybW4NZdOJz/view?usp=sharing" target="_blank" rel="noopener noreferrer">› Get my resume ‹</a></li>
-                </About>
-              </div>
-              <div className="col-xxl-7 col-md-12">
-                <Girl>
-                  <img src={girl} alt="Me watching my version of the universe" />
-                </Girl>
-              </div>
+            <div className="col-xl-5">
+              <About>
+                <li title="That's not my full name">
+                  <h1>Hyolanda Fava</h1>
+                </li>
+                <li title="My birthday is on May 13th">Existing since May/1996</li>
+                <li title="Help me to move away!">Living in Guarulhos/SP (Brazil)</li>
+                <li title="I took some time to discover my professional passion">
+                  Working with Digital Design since Jan/2021
+                </li>
+                <li className="cv" title="Check my resume">
+                  <a
+                    href="https://drive.google.com/file/d/128XDkeQmIZ5WHqU5ayQ3mUybW4NZdOJz/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    › Get my resume ‹
+                  </a>
+                </li>
+              </About>
+            </div>
+            <div className="col-xl-7">
+              <Girl>
+                <img src={girl} alt="Me watching my version of the universe" />
+              </Girl>
+            </div>
           </div>
         </div>
       </View>
