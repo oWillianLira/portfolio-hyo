@@ -55,22 +55,32 @@ export default function Home() {
 
   const Welcome = styled.div`
     padding-top: 50px;
+    font-family: 'Viaoda Libre', cursive !important;
     color: #fff;
+    margin: 0 auto;
+    text-align: center;
     h3 {
       font-weight: 200;
+      font-size: 3.5em;
     }
     h1 {
+      margin: 0;
       font-weight: 200;
-      @media screen and (max-width: 767px) {
-        width: 375px;
-        max-width: 100%;
+      max-width: 100%;
+    }
+    p {
+      font-size: 2em;
+      text-align: right;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 10px;
+      > * {
+        text-align: left !important;
       }
-      @media screen and (max-width: 375px) {
-        font-size: 2.5em;
-        strong {
-          display: block;
-        }
-      }
+    }
+    @media screen and (max-width: 450px) {
+      max-width: 300px;
+      margin: 0;
     }
   `;
 
@@ -150,21 +160,6 @@ export default function Home() {
         width: 425px;
         max-width: 85%;
       }
-    }
-  `;
-
-  const ToMenu = styled.span`
-    position: absolute;
-    right: 5px;
-    top: 48%;
-    transform: translateY(-50%);
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    color: ${colors.brown1};
-    font-size: 1.5em;
-    cursor: default;
-    @media screen and (max-width: 767px) {
-      display: none;
     }
   `;
 
@@ -303,9 +298,8 @@ export default function Home() {
           </div>
           <Welcome>
             <h3>Hello!</h3>
-            <h1>
-              Welcome to <strong>Hyolanda's Portfolio</strong>
-            </h1>
+            <h1>Welcome to Hyolanda's Portfolio</h1>
+            <p>Fell free to look around!</p>
           </Welcome>
           <div className="row expanded align-items-end position-relative">
             <div className="col-xxl-3 col-xl-4 col-md-4 col-sm-5">
@@ -323,7 +317,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <ToMenu>Fell free to look around ❯</ToMenu>
       </View>
     </main>
   );

@@ -10,7 +10,7 @@ import girl from '../../Assets/Images/talk_girl.png';
 
 export default function Contact() {
   const View = styled.section`
-    background: transparent radial-gradient(40% 40% at 25% 50%, #d69050 0%, #ac703a 100%) 0% 0% no-repeat padding-box;
+    background: transparent radial-gradient(40% 40% at 25% 50%, #d69050 0%, #c0844e 100%) 0% 0% no-repeat padding-box;
     width: 100%;
     min-height: 100vh;
     padding: 25px 0 5px;
