@@ -9,17 +9,23 @@ import Static from './Views/Arts/static';
 import Animations from './Views/Arts/animations';
 
 export default function Routes() {
+  function closeShadow() {
+    let shadow = document.querySelector('.modal-backdrop');
+    if (shadow) {
+      shadow.remove();
+    }
+  }
   return (
     <Route
       render={({ location }) => (
         <TransitionGroup>
           <CSSTransition key={location.key} classNames="fade" timeout={500}>
             <Switch location={location}>
-              <Route path="/" exact component={Home} />
-              <Route path="/about/" component={About} />
-              <Route path="/contact/" component={Contact} />
-              <Route path="/static/" component={Static} />
-              <Route path="/animations/" component={Animations} />
+              <Route path="/" exact onchange={closeShadow()} component={Home} />
+              <Route path="/about/" onchange={closeShadow()} component={About} />
+              <Route path="/contact/" onchange={closeShadow()} component={Contact} />
+              <Route path="/static/" onchange={closeShadow()} component={Static} />
+              <Route path="/animations/" onchange={closeShadow()} component={Animations} />
             </Switch>
           </CSSTransition>
         </TransitionGroup>
