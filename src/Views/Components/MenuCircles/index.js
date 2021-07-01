@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { colors } from '../../../GlobalStyles';
 
 export default function MenuCircles(props) {
   const Circles = styled.div`
@@ -29,7 +28,7 @@ export default function MenuCircles(props) {
 
   const Menu = styled.div`
     > .modal > .modal-dialog > .modal-content {
-      background-color: ${colors.blue2}ee;
+      background-color: ${props.bg}ee;
       border: none;
       border-radius: 8px;
     }
@@ -37,7 +36,7 @@ export default function MenuCircles(props) {
 
   const ModalMenu = styled.ul`
     background-color: transparent;
-    border: solid 1px ${colors.blue1};
+    border: solid 1px ${props.links};
     border-radius: 8px;
     min-height: 300px;
     padding: 20px;
@@ -46,6 +45,17 @@ export default function MenuCircles(props) {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    &::after {
+      content: '';
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 10px;
+      left: -25px;
+      width: 75px;
+      color: ${props.links};
+      border-bottom: double 4px;
+    }
     li {
       text-align: center;
       &:not(:last-child) {
@@ -53,7 +63,7 @@ export default function MenuCircles(props) {
       }
       a {
         font-family: 'Viaoda Libre', cursive !important;
-        color: ${colors.brown1};
+        color: ${props.links};
         font-size: 1.75em;
         transition: 200ms;
         &:hover {
@@ -74,7 +84,7 @@ export default function MenuCircles(props) {
           height="47"
           viewBox="0 0 165 47"
         >
-          <g id="circles2" transform="translate(-878 -73)">
+          <g id="circlesMenu" transform="translate(-878 -73)">
             <g
               id="Elipse_6"
               data-name="Elipse 6"

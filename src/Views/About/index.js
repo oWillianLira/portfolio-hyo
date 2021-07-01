@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { colors } from '../../GlobalStyles';
+import { colors, view } from '../../GlobalStyles';
 import MenuCircles from '../Components/MenuCircles';
+import Resume from '../Components/Resume';
 
 import girl from '../../Assets/Images/about_girl.png';
 
@@ -17,6 +18,7 @@ export default function About() {
       display: flex;
       flex-direction: column;
       flex: 1;
+      max-height: ${view.max_h};
       .row.expanded {
         flex: 1;
       }
@@ -28,69 +30,6 @@ export default function About() {
     }
     @media screen and (max-width: 400px) {
       padding-top: 25px;
-    }
-  `;
-
-  const Resume = styled.a`
-    color: ${colors.brown2};
-    font-size: 1.6em;
-    letter-spacing: 0;
-    line-height: 1;
-    position: relative;
-    top: 0;
-    height: 150px;
-    width: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover {
-      color: ${colors.brown2};
-      letter-spacing: 2px;
-      span {
-        transform: rotate(0deg);
-      }
-      &::before {
-        transform: rotate(0deg);
-        margin: 0;
-      }
-      &::after {
-        transform: rotate(0deg);
-        margin-left: 10px;
-        margin-top: -10px;
-      }
-    }
-    span {
-      transform: rotate(-15deg);
-      transition: 400ms ease-in;
-    }
-    &::before {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border: solid 2px ${colors.brown2};
-      transform: rotate(15deg);
-      margin-left: 8px;
-      margin-top: -8px;
-      transition: 400ms ease-in;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      border: solid 2px ${colors.blue1};
-      transform: rotate(15deg);
-      margin-left: -8px;
-      margin-top: 8px;
-      transition: 1000ms ease-in-out;
-    }
-    @media screen and (max-width: 1199px) {
-      position: absolute;
-      top: 50vh;
-    }
-    @media screen and (max-width: 767px) {
-      display: none;
     }
   `;
 
@@ -122,6 +61,9 @@ export default function About() {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 0;
+    }
     li {
       font-size: 1.3em;
       margin-bottom: 10px;
@@ -152,19 +94,17 @@ export default function About() {
         <div className="container">
           <div className="row">
             <div className="col-xxl-3 col-xl-4">
-              <Resume
-                target="_blank"
-                title="To know much more about me"
-                href="https://drive.google.com/file/d/128XDkeQmIZ5WHqU5ayQ3mUybW4NZdOJz/view?usp=sharing"
-              >
-                <span>
-                  Get my <br />
-                  resume
-                </span>
-              </Resume>
+              <Resume text={colors.brown2} before={colors.brown2} after={colors.blue1} />
             </div>
             <div className="col-xxl-6 col-xl-4 col-md-12">
-              <MenuCircles four={colors.blue1} three={colors.brown2} text={colors.blue2} hover={colors.blue1} />
+              <MenuCircles
+                four={colors.blue1}
+                three={colors.brown2}
+                text={colors.blue2}
+                hover={colors.blue1}
+                bg={colors.blue2}
+                links={colors.brown1}
+              />
             </div>
             <div className="col-xxl-3 col-xl-4 col-md-12 text-end">
               {/* <Menu c1={colors.brown2} c2={colors.blue1}></Menu> */}

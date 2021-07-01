@@ -121,4 +121,8 @@ export const colors = {
   brown2: '#C45030',
 };
 
+export const view = {
+  max_h: '1366px',
+};
+
 export default GlobalStyle;
