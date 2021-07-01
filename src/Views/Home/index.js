@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { colors } from '../../GlobalStyles';
+import { colors, view } from '../../GlobalStyles';
 
 import Menu from '../Components/Menu';
 import girl from '../../Assets/Images/welcome_girl.png';
@@ -18,6 +18,7 @@ export default function Home() {
       flex: 1;
       display: flex;
       flex-direction: column;
+      max-height: ${view.max_h};
       .row.expanded {
         flex: 1;
       }
@@ -43,7 +44,7 @@ export default function Home() {
     width: 100%;
     text-align: center;
     svg {
-      max-width: 125px;
+      max-width: 150px;
     }
     @media screen and (max-width: 767px) {
       margin-bottom: 25px;
