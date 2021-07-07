@@ -18,11 +18,6 @@ import mockup5 from '../../../Arts/static/cartaz5-mockup.png';
 import cartaz6 from '../../../Arts/static/cartaz6.jpg';
 import mockup6 from '../../../Arts/static/cartaz6-mockup.png';
 
-// function importAll(r) {
-//   return r.keys().map(r);
-// }
-// const images = importAll(require.context('../../../Arts/static', false, /\.(png|jpe?g|svg)$/));
-
 export default function SliderArts() {
   const settings = {
     dots: true,
