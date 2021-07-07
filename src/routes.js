@@ -13,6 +13,8 @@ export default function Routes() {
     let shadow = document.querySelector('.modal-backdrop');
     if (shadow) {
       shadow.remove();
+      document.body.classList.remove('modal-open');
+      document.body.removeAttribute('style', '');
     }
   }
   return (
