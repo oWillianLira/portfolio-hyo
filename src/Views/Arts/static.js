@@ -1,54 +1,55 @@
 import React from 'react';
 import styled from 'styled-components';
 import { colors } from '../../GlobalStyles';
-import Menu from '../Components/Menu';
-import SliderArts from '../Components/SliderStatic';
+import MenuCircles from '../Components/MenuCircles';
+
+import cartaz1 from '../../Arts/static/cartaz1.jpg';
+import mockup1 from '../../Arts/static/cartaz1-mockup.png';
+import cartaz2 from '../../Arts/static/cartaz2.jpg';
+import mockup2 from '../../Arts/static/cartaz2-mockup.png';
+import cartaz3 from '../../Arts/static/cartaz3.jpg';
+import mockup3 from '../../Arts/static/cartaz3-mockup.png';
+import cartaz4 from '../../Arts/static/cartaz4.jpg';
+import mockup4 from '../../Arts/static/cartaz4-mockup.png';
+import cartaz5 from '../../Arts/static/cartaz5.jpg';
+import mockup5 from '../../Arts/static/cartaz5-mockup.png';
+import cartaz6 from '../../Arts/static/cartaz6.jpg';
+import mockup6 from '../../Arts/static/cartaz6-mockup.png';
+import formiga from '../../Arts/static/formiga.jpg';
+import formiga_mockup from '../../Arts/static/formiga-mockup.png';
+import talkart from '../../Arts/static/talkart.jpg';
 
 export default function Static() {
   const View = styled.section`
     background: transparent radial-gradient(40% 40% at 25% 50%, #fff 0%, #f3eae0 100%) 0% 0% no-repeat padding-box;
     width: 100%;
     min-height: 100vh;
-    padding: 25px 0 5px;
+    padding: 25px 0 50px;
     display: flex;
     flex-direction: column;
-    .container {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      .row.expanded {
-        flex: 1;
-      }
-    }
-  `;
-
-  const Circles = styled.div`
-    width: 100%;
-    text-align: center;
-    svg {
-      max-width: 125px;
-    }
-    @media screen and (max-width: 767px) {
-      margin-bottom: 25px;
-    }
-    @media screen and (max-width: 575px) {
-      margin-bottom: 0;
+    .container .row {
+      margin-top: 75px;
     }
   `;
 
   const Intro = styled.div`
-    color: ${colors.blue2};
-    h2 {
+    h3 {
       font-size: 2em;
-      line-height: 1;
-      margin-bottom: 0;
+      font-weight: 600;
+      font-family: 'Viaoda Libre', cursive !important;
+      color: ${colors.brown2};
+      line-height: 1.5em;
     }
-    h1 {
-      line-height: 1;
-      font-family: serif;
-      font-size: 3.5em;
-      text-align: right;
-      margin-bottom: 0;
+  `;
+
+  const Art = styled.div`
+    text-align: center;
+    a {
+      img {
+        width: 275px;
+        -webkit-box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.8);
+        box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.8);
+      }
     }
   `;
 
@@ -56,97 +57,80 @@ export default function Static() {
     <main className="page">
       <View>
         <div className="container">
-          <div className="row">
-            <div className="col-xxl-3 col-xl-4">
+          <MenuCircles
+            four={colors.blue1}
+            three={colors.brown2}
+            text={colors.blue2}
+            hover={colors.blue1}
+            bg={colors.brown2}
+            links={colors.brown1}
+          />
+          <div className="row ">
+            <div className="col-md-8">
               <Intro>
-                {/* <h2>Welcome to</h2>
-                <h1>my gallery</h1> */}
+                <h3>
+                  Take a look at some of my works <br />
+                  Here it is some of my Static Arts...
+                </h3>
               </Intro>
             </div>
-            <div className="col-xxl-6 col-xl-4 col-md-12">
-              <Circles>
-                <svg xmlns="http://www.w3.org/2000/svg" width="165" height="45" viewBox="0 0 165 45">
-                  <g id="circles2" transform="translate(-878 -75)">
-                    <g
-                      id="Elipse_6"
-                      data-name="Elipse 6"
-                      transform="translate(878 75)"
-                      fill="none"
-                      stroke="#5a86a9"
-                      stroke-width="2"
-                    >
-                      <circle cx="15" cy="15" r="15" stroke="none" />
-                      <circle cx="15" cy="15" r="14" fill="none" />
-                    </g>
-                    <g
-                      id="Elipse_7"
-                      data-name="Elipse 7"
-                      transform="translate(923 75)"
-                      fill="none"
-                      stroke="#5a86a9"
-                      stroke-width="2"
-                    >
-                      <circle cx="15" cy="15" r="15" stroke="none" />
-                      <circle cx="15" cy="15" r="14" fill="none" />
-                    </g>
-                    <g
-                      id="Elipse_8"
-                      data-name="Elipse 8"
-                      transform="translate(968 75)"
-                      fill="none"
-                      stroke="#5a86a9"
-                      stroke-width="2"
-                    >
-                      <circle cx="15" cy="15" r="15" stroke="none" />
-                      <circle cx="15" cy="15" r="14" fill="none" />
-                    </g>
-                    <g
-                      id="Elipse_9"
-                      data-name="Elipse 9"
-                      transform="translate(1013 75)"
-                      fill="none"
-                      stroke="#5a86a9"
-                      stroke-width="2"
-                    >
-                      <circle cx="15" cy="15" r="15" stroke="none" />
-                      <circle cx="15" cy="15" r="14" fill="none" />
-                    </g>
-                    <circle
-                      id="Elipse_10"
-                      data-name="Elipse 10"
-                      cx="15"
-                      cy="15"
-                      r="15"
-                      transform="translate(900 90)"
-                      fill="#c45030"
-                    />
-                    <circle
-                      id="Elipse_11"
-                      data-name="Elipse 11"
-                      cx="15"
-                      cy="15"
-                      r="15"
-                      transform="translate(945 90)"
-                      fill="#c45030"
-                    />
-                    <circle
-                      id="Elipse_12"
-                      data-name="Elipse 12"
-                      cx="15"
-                      cy="15"
-                      r="15"
-                      transform="translate(990 90)"
-                      fill="#c45030"
-                    />
-                  </g>
-                </svg>
-              </Circles>
+            <div className="col-md-4">
+              <Art>
+                <a href={cartaz3}>
+                  <img src={mockup3} alt="Hyolanda Fava" />
+                </a>
+              </Art>
             </div>
-            <div className="col-xxl-3 col-xl-4 col-md-12 text-end">
-              <Menu c1={colors.blue2} c2={colors.blue1}></Menu>
+            <div className="col-md-4" Style="margin-top: -190px;">
+              <Art>
+                <a href={formiga}>
+                  <img src={formiga_mockup} alt="Hyolanda Fava" />
+                </a>
+              </Art>
+            </div>
+            <div className="col-md-4">
+              <Art>
+                <a href={cartaz4}>
+                  <img src={mockup4} alt="Norway" />
+                </a>
+              </Art>
+            </div>
+            <div className="col-md-4" Style="margin-top: 190px;">
+              <Art>
+                <a href={talkart}>
+                  <img src={talkart} alt="Norway" />
+                </a>
+              </Art>
+            </div>
+            <div className="col-md-4" Style="margin-top: -190px;">
+              <Art>
+                <a href={cartaz2}>
+                  <img src={mockup2} alt="Hyolanda Fava" />
+                </a>
+              </Art>
+            </div>
+            <div className="col-md-4">
+              <Art>
+                <a href={cartaz6}>
+                  <img src={mockup6} alt="Hyolanda Fava" />
+                </a>
+              </Art>
+            </div>
+            <div className="col-md-4" Style="margin-top: 190px;">
+              <Art>
+                <a href={cartaz5}>
+                  <img src={mockup5} alt="Hyolanda Fava" />
+                </a>
+              </Art>
+            </div>
+            <div className="col-md-4" Style="margin-top: -190px;">
+              <Art>
+                <a href={cartaz1}>
+                  <img src={mockup1} alt="Hyolanda Fava" />
+                </a>
+              </Art>
             </div>
           </div>
-          <SliderArts></SliderArts>
         </div>
       </View>
     </main>

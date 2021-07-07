@@ -28,7 +28,7 @@ export default function MenuCircles(props) {
 
   const Menu = styled.div`
     > .modal > .modal-dialog > .modal-content {
-      background-color: ${props.bg}ee;
+      background-color: ${props.bg}f5;
       border: none;
       border-radius: 8px;
     }
@@ -64,7 +64,8 @@ export default function MenuCircles(props) {
       a {
         font-family: 'Viaoda Libre', cursive !important;
         color: ${props.links};
-        font-size: 1.75em;
+        font-size: 2em;
+        font-weight: 500;
         transition: 200ms;
         &:hover {
           letter-spacing: 2px;
