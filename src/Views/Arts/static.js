@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { colors } from '../../GlobalStyles';
 import MenuCircles from '../Components/MenuCircles';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import cartaz1 from '../../Arts/static/cartaz1.jpg';
 import mockup1 from '../../Arts/static/cartaz1-mockup.png';
@@ -21,6 +23,11 @@ import formiga_mockup from '../../Arts/static/formiga-mockup.png';
 import talkart from '../../Arts/static/talkart.jpg';
 
 export default function Static() {
+  AOS.init({
+    delay: 250,
+    duration: 1250,
+  });
+
   const options = {
     settings: {
       slideAnimationType: 'slide',
@@ -126,56 +133,56 @@ export default function Static() {
                 <div className="art_area col-lg-4">
                   <Art>
                     <a href={cartaz3}>
-                      <img src={mockup3} alt="Hyolanda Fava" />
+                      <img data-aos="fade-down-left" src={mockup3} alt="Hyolanda Fava" />
                     </a>
                   </Art>
                 </div>
                 <div className="art_area col-lg-4" Style="margin-top: -190px;">
                   <Art>
                     <a href={formiga}>
-                      <img src={formiga_mockup} alt="Formiga, football player" />
+                      <img data-aos="fade-down-left" src={formiga_mockup} alt="Formiga, football player" />
                     </a>
                   </Art>
                 </div>
                 <div className="art_area col-lg-4">
                   <Art>
                     <a href={cartaz4}>
-                      <img src={mockup4} alt="Norway" />
+                      <img data-aos="fade-down-left" src={mockup4} alt="Norway" />
                     </a>
                   </Art>
                 </div>
                 <div className="art_area col-lg-4" Style="margin-top: 190px;">
                   <Art>
                     <a href={talkart}>
-                      <img src={talkart} alt="African Culture - Special Event" />
+                      <img data-aos="fade-down-left" src={talkart} alt="African Culture - Special Event" />
                     </a>
                   </Art>
                 </div>
                 <div className="art_area col-lg-4" Style="margin-top: -190px;">
                   <Art>
                     <a href={cartaz2}>
-                      <img src={mockup2} alt="Croatia - Euro 2020" />
+                      <img data-aos="fade-down-left" src={mockup2} alt="Croatia - Euro 2020" />
                     </a>
                   </Art>
                 </div>
                 <div className="art_area col-lg-4">
                   <Art>
                     <a href={cartaz6}>
-                      <img src={mockup6} alt="Long Live Love" />
+                      <img data-aos="fade-down-left" src={mockup6} alt="Long Live Love" />
                     </a>
                   </Art>
                 </div>
                 <div className="art_area col-lg-4" Style="margin-top: 190px;">
                   <Art>
                     <a href={cartaz5}>
-                      <img src={mockup5} alt="Live Life Now" />
+                      <img data-aos="fade-down-left" src={mockup5} alt="Live Life Now" />
                     </a>
                   </Art>
                 </div>
                 <div className="art_area col-lg-4" Style="margin-top: -190px;">
                   <Art>
                     <a href={cartaz1}>
-                      <img src={mockup1} alt="Oh, ok. but!" />
+                      <img data-aos="fade-down-left" src={mockup1} alt="Oh, ok. but!" />
                     </a>
                   </Art>
                 </div>
