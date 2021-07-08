@@ -1,22 +1,38 @@
 {
   "files": {
-    "main.js": "/static/js/main.5b59cb2c.chunk.js",
-    "main.js.map": "/static/js/main.5b59cb2c.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f40e5050.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f40e5050.js.map",
-    "static/css/2.61b4cb56.chunk.css": "/static/css/2.61b4cb56.chunk.css",
-    "static/js/2.c343aa9e.chunk.js": "/static/js/2.c343aa9e.chunk.js",
-    "static/js/2.c343aa9e.chunk.js.map": "/static/js/2.c343aa9e.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.61b4cb56.chunk.css.map": "/static/css/2.61b4cb56.chunk.css.map",
-    "static/js/2.c343aa9e.chunk.js.LICENSE.txt": "/static/js/2.c343aa9e.chunk.js.LICENSE.txt",
-    "static/media/talk_girl.19d77de3.png": "/static/media/talk_girl.19d77de3.png",
-    "static/media/welcome_girl.e3d16b7d.png": "/static/media/welcome_girl.e3d16b7d.png"
+    "main.js": "/hyolanda/static/js/main.1037ec82.chunk.js",
+    "main.js.map": "/hyolanda/static/js/main.1037ec82.chunk.js.map",
+    "runtime-main.js": "/hyolanda/static/js/runtime-main.66aacee7.js",
+    "runtime-main.js.map": "/hyolanda/static/js/runtime-main.66aacee7.js.map",
+    "static/css/2.61b4cb56.chunk.css": "/hyolanda/static/css/2.61b4cb56.chunk.css",
+    "static/js/2.ef27d1f5.chunk.js": "/hyolanda/static/js/2.ef27d1f5.chunk.js",
+    "static/js/2.ef27d1f5.chunk.js.map": "/hyolanda/static/js/2.ef27d1f5.chunk.js.map",
+    "index.html": "/hyolanda/index.html",
+    "static/css/2.61b4cb56.chunk.css.map": "/hyolanda/static/css/2.61b4cb56.chunk.css.map",
+    "static/js/2.ef27d1f5.chunk.js.LICENSE.txt": "/hyolanda/static/js/2.ef27d1f5.chunk.js.LICENSE.txt",
+    "static/media/about_girl.a4c7921e.png": "/hyolanda/static/media/about_girl.a4c7921e.png",
+    "static/media/cartaz1-mockup.a400798f.png": "/hyolanda/static/media/cartaz1-mockup.a400798f.png",
+    "static/media/cartaz1.3b97518b.jpg": "/hyolanda/static/media/cartaz1.3b97518b.jpg",
+    "static/media/cartaz2-mockup.4ce10384.png": "/hyolanda/static/media/cartaz2-mockup.4ce10384.png",
+    "static/media/cartaz2.9c0e3293.jpg": "/hyolanda/static/media/cartaz2.9c0e3293.jpg",
+    "static/media/cartaz3-mockup.14dbafe8.png": "/hyolanda/static/media/cartaz3-mockup.14dbafe8.png",
+    "static/media/cartaz3.892835b2.jpg": "/hyolanda/static/media/cartaz3.892835b2.jpg",
+    "static/media/cartaz4-mockup.8644e6cf.png": "/hyolanda/static/media/cartaz4-mockup.8644e6cf.png",
+    "static/media/cartaz4.bce18053.jpg": "/hyolanda/static/media/cartaz4.bce18053.jpg",
+    "static/media/cartaz5-mockup.da366d3f.png": "/hyolanda/static/media/cartaz5-mockup.da366d3f.png",
+    "static/media/cartaz5.2d67d9ac.jpg": "/hyolanda/static/media/cartaz5.2d67d9ac.jpg",
+    "static/media/cartaz6-mockup.089a0514.png": "/hyolanda/static/media/cartaz6-mockup.089a0514.png",
+    "static/media/cartaz6.cd33defe.jpg": "/hyolanda/static/media/cartaz6.cd33defe.jpg",
+    "static/media/formiga-mockup.323406c3.png": "/hyolanda/static/media/formiga-mockup.323406c3.png",
+    "static/media/formiga.9e46a83e.jpg": "/hyolanda/static/media/formiga.9e46a83e.jpg",
+    "static/media/talk_girl.5db8d382.png": "/hyolanda/static/media/talk_girl.5db8d382.png",
+    "static/media/talkart.5ed394dd.jpg": "/hyolanda/static/media/talkart.5ed394dd.jpg",
+    "static/media/welcome_girl.e3d16b7d.png": "/hyolanda/static/media/welcome_girl.e3d16b7d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f40e5050.js",
+    "static/js/runtime-main.66aacee7.js",
     "static/css/2.61b4cb56.chunk.css",
-    "static/js/2.c343aa9e.chunk.js",
-    "static/js/main.5b59cb2c.chunk.js"
+    "static/js/2.ef27d1f5.chunk.js",
+    "static/js/main.1037ec82.chunk.js"
   ]
 }
