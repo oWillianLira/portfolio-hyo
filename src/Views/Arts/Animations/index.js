@@ -4,6 +4,17 @@ import { colors } from '../../../GlobalStyles';
 import MenuCircles from '../../Components/MenuCircles';
 
 import cartaz1 from '../../../Arts/static/cartaz1.jpg';
+import mockup1 from '../../../Arts/static/cartaz1-mockup.png';
+import cartaz2 from '../../../Arts/static/cartaz2.jpg';
+import mockup2 from '../../../Arts/static/cartaz2-mockup.png';
+import cartaz3 from '../../../Arts/static/cartaz3.jpg';
+import mockup3 from '../../../Arts/static/cartaz3-mockup.png';
+import cartaz4 from '../../../Arts/static/cartaz4.jpg';
+import mockup4 from '../../../Arts/static/cartaz4-mockup.png';
+import cartaz5 from '../../../Arts/static/cartaz5.jpg';
+import mockup5 from '../../../Arts/static/cartaz5-mockup.png';
+import cartaz6 from '../../../Arts/static/cartaz6.jpg';
+import mockup6 from '../../../Arts/static/cartaz6-mockup.png';
 
 export default function Animations() {
   const View = styled.section`
@@ -50,6 +61,17 @@ export default function Animations() {
             alt=""
           />
           <img src={cartaz1} Style="width: 350px" alt="" />
+          <img src={mockup1} Style="width: 350px" alt="" />
+          <img src={cartaz2} Style="width: 350px" alt="" />
+          <img src={mockup2} Style="width: 350px" alt="" />
+          <img src={cartaz3} Style="width: 350px" alt="" />
+          <img src={mockup3} Style="width: 350px" alt="" />
+          <img src={cartaz4} Style="width: 350px" alt="" />
+          <img src={mockup4} Style="width: 350px" alt="" />
+          <img src={cartaz5} Style="width: 350px" alt="" />
+          <img src={mockup5} Style="width: 350px" alt="" />
+          <img src={cartaz6} Style="width: 350px" alt="" />
+          <img src={mockup6} Style="width: 350px" alt="" />
         </div>
       </View>
     </main>
