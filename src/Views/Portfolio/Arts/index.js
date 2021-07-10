@@ -6,24 +6,24 @@ import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import cartaz1 from '../../../Arts/static/cartaz1.jpg';
-import mockup1 from '../../../Arts/static/cartaz1-mockup.png';
-import cartaz2 from '../../../Arts/static/cartaz2.jpg';
-import mockup2 from '../../../Arts/static/cartaz2-mockup.png';
-import cartaz3 from '../../../Arts/static/cartaz3.jpg';
-import mockup3 from '../../../Arts/static/cartaz3-mockup.png';
-import cartaz4 from '../../../Arts/static/cartaz4.jpg';
-import mockup4 from '../../../Arts/static/cartaz4-mockup.png';
-import cartaz5 from '../../../Arts/static/cartaz5.jpg';
-import mockup5 from '../../../Arts/static/cartaz5-mockup.png';
-import cartaz6 from '../../../Arts/static/cartaz6.jpg';
-import mockup6 from '../../../Arts/static/cartaz6-mockup.png';
-import formiga from '../../../Arts/static/formiga.jpg';
-import formiga_mockup from '../../../Arts/static/formiga-mockup.png';
-import talkart from '../../../Arts/static/talkart.jpg';
-import talkart_mockup from '../../../Arts/static/talkart-mockup.png';
+import cartaz1 from '../../../Uploads/Arts/cartaz1.jpg';
+import mockup1 from '../../../Uploads/Arts/cartaz1-mockup.png';
+import cartaz2 from '../../../Uploads/Arts/cartaz2.jpg';
+import mockup2 from '../../../Uploads/Arts/cartaz2-mockup.png';
+import cartaz3 from '../../../Uploads/Arts/cartaz3.jpg';
+import mockup3 from '../../../Uploads/Arts/cartaz3-mockup.png';
+import cartaz4 from '../../../Uploads/Arts/cartaz4.jpg';
+import mockup4 from '../../../Uploads/Arts/cartaz4-mockup.png';
+import cartaz5 from '../../../Uploads/Arts/cartaz5.jpg';
+import mockup5 from '../../../Uploads/Arts/cartaz5-mockup.png';
+import cartaz6 from '../../../Uploads/Arts/cartaz6.jpg';
+import mockup6 from '../../../Uploads/Arts/cartaz6-mockup.png';
+import formiga from '../../../Uploads/Arts/formiga.jpg';
+import formiga_mockup from '../../../Uploads/Arts/formiga-mockup.png';
+import talkart from '../../../Uploads/Arts/talkart.jpg';
+import talkart_mockup from '../../../Uploads/Arts/talkart-mockup.png';
 
-export default function Animations() {
+export default function Arts() {
   AOS.init({
     delay: 250,
     duration: 1250,

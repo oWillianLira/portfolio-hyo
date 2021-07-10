@@ -228,9 +228,9 @@ export default function MenuCircles(props) {
                   <Link to="/about/">About me</Link>
                 </li>
               )}
-              {!window.location.href.includes('static') && (
+              {!window.location.href.includes('arts') && (
                 <li>
-                  <Link to="/static/">Static arts</Link>
+                  <Link to="/arts/">Static Arts</Link>
                 </li>
               )}
               {!window.location.href.includes('animations') && (
