@@ -5,8 +5,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Home from './Views/Home';
 import About from './Views/About';
 import Contact from './Views/Contact';
-import Static from './Views/Arts/Static';
-import Animations from './Views/Arts/Animations';
+import Arts from './Views/Portfolio/Arts';
+import Animations from './Views/Portfolio/Animations';
 
 export default function Routes() {
   function closeShadow() {
@@ -26,7 +26,7 @@ export default function Routes() {
               <Route path="/" exact onchange={closeShadow()} component={Home} />
               <Route path="/about/" onchange={closeShadow()} component={About} />
               <Route path="/contact/" onchange={closeShadow()} component={Contact} />
-              <Route path="/static/" onchange={closeShadow()} component={Static} />
+              <Route path="/arts/" onchange={closeShadow()} component={Arts} />
               <Route path="/animations/" onchange={closeShadow()} component={Animations} />
             </Switch>
           </CSSTransition>

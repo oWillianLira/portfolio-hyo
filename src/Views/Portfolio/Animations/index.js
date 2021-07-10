@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { colors } from '../../GlobalStyles';
-// import Menu from '../Components/Menu';
+import { colors } from '../../../GlobalStyles';
+import MenuCircles from '../../Components/MenuCircles';
 
 export default function Animations() {
   const View = styled.section`
@@ -31,7 +31,18 @@ export default function Animations() {
 
   return (
     <main className="page">
-      <View></View>
+      <View>
+        <div className="container">
+          <MenuCircles
+            four={colors.blue1}
+            three={colors.brown2}
+            text={colors.blue2}
+            hover={colors.blue1}
+            bg={colors.brown2}
+            links={colors.brown1}
+          />
+        </div>
+      </View>
     </main>
   );
 }
