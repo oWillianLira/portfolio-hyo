@@ -5,8 +5,8 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Home from './Views/Home';
 import About from './Views/About';
 import Contact from './Views/Contact';
-import Static from './Views/Arts/static';
-import Animations from './Views/Arts/animations';
+import Static from './Views/Arts/Static';
+import Animations from './Views/Arts/Animations';
 
 export default function Routes() {
   function closeShadow() {
