@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { colors } from '../../../GlobalStyles';
 import MenuCircles from '../../Components/MenuCircles';
 
-// import cartaz1 from '../../../Arts/static/cartaz1.jpg';
+import cartaz1 from '../../../Arts/static/cartaz1.jpg';
 
 export default function Animations() {
   const View = styled.section`
@@ -49,7 +49,7 @@ export default function Animations() {
             Style="width: 350px;"
             alt=""
           />
-          {/* <img src={cartaz1} Style="width: 350px" alt="" /> */}
+          <img src={cartaz1} Style="width: 350px" alt="" />
         </div>
       </View>
     </main>
