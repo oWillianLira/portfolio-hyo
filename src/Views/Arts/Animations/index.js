@@ -3,43 +3,111 @@ import styled from 'styled-components';
 import { colors } from '../../../GlobalStyles';
 import MenuCircles from '../../Components/MenuCircles';
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import cartaz1 from '../../../Arts/static/cartaz1.jpg';
 import mockup1 from '../../../Arts/static/cartaz1-mockup.png';
-// import cartaz2 from '../../../Arts/static/cartaz2.jpg';
-// import mockup2 from '../../../Arts/static/cartaz2-mockup.png';
-// import cartaz3 from '../../../Arts/static/cartaz3.jpg';
-// import mockup3 from '../../../Arts/static/cartaz3-mockup.png';
-// import cartaz4 from '../../../Arts/static/cartaz4.jpg';
-// import mockup4 from '../../../Arts/static/cartaz4-mockup.png';
-// import cartaz5 from '../../../Arts/static/cartaz5.jpg';
-// import mockup5 from '../../../Arts/static/cartaz5-mockup.png';
-// import cartaz6 from '../../../Arts/static/cartaz6.jpg';
-// import mockup6 from '../../../Arts/static/cartaz6-mockup.png';
+import cartaz2 from '../../../Arts/static/cartaz2.jpg';
+import mockup2 from '../../../Arts/static/cartaz2-mockup.png';
+import cartaz3 from '../../../Arts/static/cartaz3.jpg';
+import mockup3 from '../../../Arts/static/cartaz3-mockup.png';
+import cartaz4 from '../../../Arts/static/cartaz4.jpg';
+import mockup4 from '../../../Arts/static/cartaz4-mockup.png';
+import cartaz5 from '../../../Arts/static/cartaz5.jpg';
+import mockup5 from '../../../Arts/static/cartaz5-mockup.png';
+import cartaz6 from '../../../Arts/static/cartaz6.jpg';
+import mockup6 from '../../../Arts/static/cartaz6-mockup.png';
+import formiga from '../../../Arts/static/formiga.jpg';
+import formiga_mockup from '../../../Arts/static/formiga-mockup.png';
+import talkart from '../../../Arts/static/talkart.jpg';
+import talkart_mockup from '../../../Arts/static/talkart-mockup.png';
 
 export default function Animations() {
+  AOS.init({
+    delay: 250,
+    duration: 1250,
+  });
+
+  const options = {
+    settings: {
+      slideAnimationType: 'slide',
+      slideTransitionTimingFunction: 'backIn',
+    },
+    buttons: {
+      showThumbnailsButton: false,
+      showDownloadButton: false,
+      showAutoplayButton: false,
+    },
+    thumbnails: {
+      showThumbnails: false,
+    },
+  };
+
   const View = styled.section`
-    background: transparent radial-gradient(40% 40% at 25% 50%, #d1b9a1 0%, #f3eae0 100%) 0% 0% no-repeat padding-box;
+    background: transparent radial-gradient(40% 40% at 25% 50%, #fff 0%, #f3eae0 100%) 0% 0% no-repeat padding-box;
     width: 100%;
+    overflow-x: hidden;
     min-height: 100vh;
-    padding: 25px 0 5px;
+    padding: 25px 0 50px;
     display: flex;
     flex-direction: column;
-    .container {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-      .row.expanded {
-        flex: 1;
+    .container .row {
+      margin-top: 75px;
+      @media screen and (max-width: 991px) {
+        .art_area {
+          margin-top: unset !important;
+          transition: 500ms;
+          &:nth-child(2n + 1) {
+            margin: -80px 0 !important;
+            div {
+              text-align: left;
+            }
+          }
+          &:last-child {
+            margin-bottom: 10px !important;
+          }
+          div {
+            text-align: right;
+          }
+        }
+      }
+      @media screen and (max-width: 450px) {
+        .art_area:nth-child(2n + 1) {
+          margin: 50px 0 !important;
+        }
+      }
+      @media screen and (max-width: 375px) {
+        .art_area div {
+          text-align: center !important;
+        }
       }
     }
-    @media screen and (max-width: 767px) {
-      .text-center:last-of-type {
-        margin-bottom: 25px;
-      }
+  `;
+
+  const Intro = styled.div`
+    h3 {
+      font-size: 2em;
+      font-weight: 600;
+      font-family: 'Viaoda Libre', cursive !important;
+      color: ${colors.brown2};
+      line-height: 1.5em;
     }
-    @media screen and (max-width: 400px) {
-      padding-top: 25px;
+    margin-bottom: 50px;
+  `;
+
+  const Art = styled.div`
+    text-align: center;
+    a {
+      img {
+        transition: 500ms;
+        width: 275px;
+        -webkit-box-shadow: 2px 2px 10px 2px rgba(20, 0, 0, 0.8);
+        box-shadow: 2px 2px 10px 2px rgba(20, 0, 0, 0.8);
+        @media screen and (max-width: 767px) {
+          width: 200px;
+        }
+      }
     }
   `;
 
@@ -55,29 +123,74 @@ export default function Animations() {
             bg={colors.brown2}
             links={colors.brown1}
           />
-          <br />
-          {/* <img
-            src="https://images.unsplash.com/photo-1625851439411-749ce911fbb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-            Style="width: 350px;"
-            alt=""
-          /> */}
           <SimpleReactLightbox>
-            <SRLWrapper>
-              <a href={cartaz1}>
-                <img src={mockup1} Style="width: 350px" alt="" />
-              </a>
+            <SRLWrapper options={options}>
+              <div className="row ">
+                <div className="col-md-8">
+                  <Intro>
+                    <h3>Take a look at some of my works</h3>
+                    <h3>Here it is some of my Static Arts...</h3>
+                  </Intro>
+                </div>
+                <div className="art_area col-lg-4">
+                  <Art>
+                    <a href={cartaz3}>
+                      <img src={mockup3} alt="Hyolanda Fava" />
+                    </a>
+                  </Art>
+                </div>
+                <div className="art_area col-lg-4" Style="margin-top: -190px;">
+                  <Art>
+                    <a href={formiga}>
+                      <img src={formiga_mockup} alt="Formiga, football player" />
+                    </a>
+                  </Art>
+                </div>
+                <div className="art_area col-lg-4">
+                  <Art>
+                    <a href={cartaz4}>
+                      <img data-aos="fade-down-left" src={mockup4} alt="Norway" />
+                    </a>
+                  </Art>
+                </div>
+                <div className="art_area col-lg-4" Style="margin-top: 190px;">
+                  <Art>
+                    <a href={talkart}>
+                      <img data-aos="fade-down-left" src={talkart_mockup} alt="African Culture - Special Event" />
+                    </a>
+                  </Art>
+                </div>
+                <div className="art_area col-lg-4" Style="margin-top: -190px;">
+                  <Art>
+                    <a href={cartaz2}>
+                      <img data-aos="fade-down-left" src={mockup2} alt="Croatia - Euro 2020" />
+                    </a>
+                  </Art>
+                </div>
+                <div className="art_area col-lg-4">
+                  <Art>
+                    <a href={cartaz6}>
+                      <img data-aos="fade-down-left" src={mockup6} alt="Long Live Love" />
+                    </a>
+                  </Art>
+                </div>
+                <div className="art_area col-lg-4" Style="margin-top: 190px;">
+                  <Art>
+                    <a href={cartaz5}>
+                      <img data-aos="fade-down-left" src={mockup5} alt="Live Life Now" />
+                    </a>
+                  </Art>
+                </div>
+                <div className="art_area col-lg-4" Style="margin-top: -190px;">
+                  <Art>
+                    <a href={cartaz1}>
+                      <img data-aos="fade-down-left" src={mockup1} alt="Oh, ok. but!" />
+                    </a>
+                  </Art>
+                </div>
+              </div>
             </SRLWrapper>
           </SimpleReactLightbox>
-          {/* <img src={cartaz2} Style="width: 350px" alt="" />
-          <img src={mockup2} Style="width: 350px" alt="" />
-          <img src={cartaz3} Style="width: 350px" alt="" />
-          <img src={mockup3} Style="width: 350px" alt="" />
-          <img src={cartaz4} Style="width: 350px" alt="" />
-          <img src={mockup4} Style="width: 350px" alt="" />
-          <img src={cartaz5} Style="width: 350px" alt="" />
-          <img src={mockup5} Style="width: 350px" alt="" />
-          <img src={cartaz6} Style="width: 350px" alt="" />
-          <img src={mockup6} Style="width: 350px" alt="" /> */}
         </div>
       </View>
     </main>
