@@ -233,11 +233,11 @@ export default function MenuCircles(props) {
                   <Link to="/arts/">Static Arts</Link>
                 </li>
               )}
-              {!window.location.href.includes('animations') && (
-                <li>
-                  <Link to="/animations/">Animations</Link>
-                </li>
-              )}
+              <li>
+                <a target="blank" rel="noopener noreferrer" href="https://www.behance.net/hyolandafava-">
+                  Behance
+                </a>
+              </li>
             </ModalMenu>
           </nav>
         </div>
