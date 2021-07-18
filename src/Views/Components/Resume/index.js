@@ -73,7 +73,7 @@ export default function Resume(props) {
     <Resume
       target="_blank"
       title="To know much more about me"
-      href="https://drive.google.com/file/d/128XDkeQmIZ5WHqU5ayQ3mUybW4NZdOJz/view?usp=sharing"
+      href="https://drive.google.com/file/d/18DcdRdsb2lRvpaa7mWokFn3dMgE4KCEl/view"
     >
       <span>
         Get my <br />
