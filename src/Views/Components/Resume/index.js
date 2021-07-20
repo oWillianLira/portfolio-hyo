@@ -77,7 +77,7 @@ export default function Resume(props) {
     >
       <span>
         Get my <br />
-        resume
+        Resume
       </span>
     </Resume>
   );
