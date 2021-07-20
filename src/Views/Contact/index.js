@@ -90,9 +90,9 @@ export default function Contact() {
     justify-content: center;
     align-items: flex-end;
     img {
-      width: 700px;
+      width: 650px;
       @media screen and (max-width: 1550px) {
-        width: 500px;
+        width: 450px;
       }
       @media screen and (max-width: 1366px) {
         width: 380px;
