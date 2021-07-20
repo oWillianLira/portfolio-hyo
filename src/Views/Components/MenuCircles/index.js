@@ -238,6 +238,15 @@ export default function MenuCircles(props) {
                   Behance
                 </a>
               </li>
+              <li>
+                <a
+                  target="blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/18DcdRdsb2lRvpaa7mWokFn3dMgE4KCEl/view"
+                >
+                  Resume
+                </a>
+              </li>
             </ModalMenu>
           </nav>
         </div>
