@@ -69,7 +69,7 @@ export default function Resume(props) {
     }
   `;
 
-  const url = 'https://drive.google.com/file/d/18DcdRdsb2lRvpaa7mWokFn3dMgE4KCEl/view';
+  const url = 'https://drive.google.com/file/d/18QBIRCX6qRdr4jANSIsOq5prkg3740OU/view?usp=drivesdk';
 
   return (
     <Resume target="_blank" title="To know much more about me" rel="noopener noreferrer" href={url}>
