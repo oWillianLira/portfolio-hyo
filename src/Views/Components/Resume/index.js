@@ -72,7 +72,11 @@ export default function Resume(props) {
   const url = 'https://drive.google.com/file/d/18QBIRCX6qRdr4jANSIsOq5prkg3740OU/view?usp=drivesdk';
 
   return (
-    <Resume target="_blank" title="To know much more about me" rel="noopener noreferrer" href={url}>
+    <Resume
+      target="_blank"
+      title="To know much more about me"
+      href="https://drive.google.com/file/d/1PXut8w5ZXxNhXGkmMNMwd4z_G-CMzwuv/view?usp=drivesdk"
+    >
       <span>
         Get my <br />
         Resume
