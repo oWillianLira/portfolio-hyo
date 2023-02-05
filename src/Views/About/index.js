@@ -106,9 +106,7 @@ export default function About() {
                 links={colors.brown1}
               />
             </div>
-            <div className="col-xxl-3 col-xl-4 col-md-12 text-end">
-              {/* <Menu c1={colors.brown2} c2={colors.blue1}></Menu> */}
-            </div>
+            <div className="col-xxl-3 col-xl-4 col-md-12 text-end"></div>
           </div>
           <div className="row expanded">
             <div className="col-xl-5">

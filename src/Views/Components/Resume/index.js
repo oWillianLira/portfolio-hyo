@@ -69,6 +69,8 @@ export default function Resume(props) {
     }
   `;
 
+  const url = 'https://drive.google.com/file/d/18QBIRCX6qRdr4jANSIsOq5prkg3740OU/view?usp=drivesdk';
+
   return (
     <Resume
       target="_blank"
@@ -77,7 +79,7 @@ export default function Resume(props) {
     >
       <span>
         Get my <br />
-        resume
+        Resume
       </span>
     </Resume>
   );
