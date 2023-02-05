@@ -123,7 +123,7 @@ export default function About() {
                 </li>
                 <li className="cv" title="Check my resume">
                   <a
-                    href="https://drive.google.com/file/d/128XDkeQmIZ5WHqU5ayQ3mUybW4NZdOJz/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1PXut8w5ZXxNhXGkmMNMwd4z_G-CMzwuv/view?usp=drivesdk"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
